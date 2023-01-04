@@ -1,0 +1,26 @@
+<annotation>
+	<folder>thumbsup</folder>
+	<filename>thumbsup.2caa2b96-a934-11ec-8dc7-dca904818221.jpg</filename>
+	<path>/Users/sousa/Desktop/Bi4all/Git_bi4all/ml-usecase-tensorflow-object-detection/src/tf_model_maker/MyFirstTFOD/Tensorflow/workspace/images/collectedimages/thumbsup/thumbsup.2caa2b96-a934-11ec-8dc7-dca904818221.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>ThumbsUp</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>413</xmin>
+			<ymin>492</ymin>
+			<xmax>610</xmax>
+			<ymax>720</ymax>
+		</bndbox>
+	</object>
+</annotation>

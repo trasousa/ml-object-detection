@@ -1,0 +1,26 @@
+<annotation>
+	<folder>peace</folder>
+	<filename>peace.450b83ec-a934-11ec-8dc7-dca904818221.jpg</filename>
+	<path>/Users/sousa/Desktop/Bi4all/Git_bi4all/ml-usecase-tensorflow-object-detection/src/tf_model_maker/MyFirstTFOD/Tensorflow/workspace/images/collectedimages/peace/peace.450b83ec-a934-11ec-8dc7-dca904818221.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Peace</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>681</xmin>
+			<ymin>381</ymin>
+			<xmax>866</xmax>
+			<ymax>687</ymax>
+		</bndbox>
+	</object>
+</annotation>

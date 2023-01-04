@@ -1,0 +1,37 @@
+FROM tensorflow/tensorflow:2.7.1
+
+
+# Install apt dependencies
+RUN apt-get update && apt-get install -y \
+    protobuf-compiler \
+    python3-opencv 
+
+RUN  mkdir /temp && mkdir /app
+
+# create folder structure 
+# Copy this version of of the model garden into the image
+COPY requirements.txt  /temp/ 
+COPY model /app
+COPY src/* /app
+
+WORKDIR /app
+
+# Compile protobuf configs
+RUN protoc object_detection/protos/*.proto --python_out=.
+
+# Install object_detection files 
+RUN cp object_detection/packages/tf2/setup.py ./ 
+
+RUN python -m pip install -U pip
+RUN python -m pip install .
+
+# Install pip dependencies 
+RUN pip install -r ../temp/requirements.txt 
+RUN mkdir /temp/images
+
+ARG JWT_SECRET_BUILDTIME
+ENV JWT_SECRET ${JWT_SECRET_BUILDTIME}
+ 
+EXPOSE 8000
+
+CMD ["gunicorn", "-k", "uvicorn.workers.UvicornWorker", "-b", "0.0.0.0:8000", "--timeout", "600", "app:app"]

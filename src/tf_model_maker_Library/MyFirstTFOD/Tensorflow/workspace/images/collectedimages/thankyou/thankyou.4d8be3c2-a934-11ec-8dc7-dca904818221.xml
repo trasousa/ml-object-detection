@@ -1,0 +1,26 @@
+<annotation>
+	<folder>thankyou</folder>
+	<filename>thankyou.4d8be3c2-a934-11ec-8dc7-dca904818221.jpg</filename>
+	<path>/Users/sousa/Desktop/Bi4all/Git_bi4all/ml-usecase-tensorflow-object-detection/src/tf_model_maker/MyFirstTFOD/Tensorflow/workspace/images/collectedimages/thankyou/thankyou.4d8be3c2-a934-11ec-8dc7-dca904818221.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>ThankYou</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>436</xmin>
+			<ymin>406</ymin>
+			<xmax>958</xmax>
+			<ymax>631</ymax>
+		</bndbox>
+	</object>
+</annotation>
